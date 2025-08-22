@@ -223,15 +223,6 @@ export { info, convert, status } from './download/clickyt.js';
   export {
     rSearch
   } from './search/rSearch.js';
-    export {
-    ytSearch,
-    fytSearch
-  } from './search/yts.js';
-  export {
-    ytmSearch,
-    fytmSearch,
-    ytmMetadata
-  } from './search/myts.js';
 
 
   /* ❢◥ ▬▬▬▬▬ U T I L S ▬▬▬▬▬ ◤❢ */
