@@ -248,6 +248,18 @@ export { info, convert, status } from './download/clickyt.js';
   export {
     igdlp
   } from './tools/instagrampp.js';
+  export {
+  bassBoost,
+  audio3D,
+  vocalRemover,
+  autoPanner,
+  noiseReducer,
+  pitchShifter,
+  reverb,
+  reverseAudio,
+  stereoPanner,
+  tempo
+  } from './tools/audiotools.js';
 
 
   /* ❢◥ ▬▬▬▬▬ E C O N ▬▬▬▬▬ ◤❢ */
