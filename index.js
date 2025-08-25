@@ -183,6 +183,7 @@ export {
     dlytv
   } from './download/youtubedlv.js'; /* 💢 Downed Module 💢 */
 export { spdl5 } from './download/spotify5.js';
+export { spotifyDL } from './download/spotify6.js';
 export { info, convert, status } from './download/clickyt.js';
 
 
