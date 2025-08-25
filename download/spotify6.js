@@ -1,8 +1,22 @@
 import axios from 'axios';
 import qs from 'qs';
 
-export async function spotifyDL(url, nonce = '41dd03eeaf') {
+async function scrapeNonce() {
+  const { data: html } = await axios.get('https://spotify.downloaderize.com', {
+    headers: {
+      'User-Agent':
+        'Mozilla/5.0 (Linux; Android 13; moto g play - 2023 Build/T3SGS33.165-46-3-1-22) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.7258.94 Mobile Safari/537.36'
+    }
+  });
+
+  const match = html.match(/"nonce"\s*:\s*"([0-9a-f]+)"/);
+  if (!match) throw new Error('No se pudo obtener el nonce');
+  return match[1];
+}
+
+export async function spotifyDL(url) {
   try {
+    const nonce = await scrapeNonce();
     const payload = qs.stringify({
       action: 'spotify_downloader_get_info',
       url,
