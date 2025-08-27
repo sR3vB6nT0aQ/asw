@@ -286,3 +286,6 @@ export { info, convert, status } from './download/clickyt.js';
     xvideossearch,
     xvideosdl 
   } from './nsfw/nsfw-xvideos.js';
+  export {
+    phdl
+  } from './nsfw/nsfw-phdl.js';
