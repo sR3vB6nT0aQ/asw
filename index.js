@@ -99,9 +99,10 @@ export {
   export {
     downloadFromSpotymate
   } from './download/spotymate.js';
-  export {
-  default as ssvid
-  } from './download/ssvid.js';
+export {
+  default as ssvid,
+  ssvidmp3
+} from './download/ssvid.js';
   export {
     threadsScraper
   } from './download/threads.js';
