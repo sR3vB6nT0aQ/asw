@@ -50,7 +50,7 @@ export {
   export {
     venice
   } from './ai/venice.js';
-
+export { kimi } from './ai/kimi.js';
 
   /* ❢◥ ▬▬▬▬▬ D O W N L O A D ▬▬▬▬▬ ◤❢ */
   /**
