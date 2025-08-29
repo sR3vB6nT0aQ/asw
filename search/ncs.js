@@ -5,7 +5,7 @@ const NCS = 'https://ncs.io';
 
 const decorate = (d) => ({ autor: '🜲 ᵖᵃᵗᵒ', status: d.length > 0, data: d });
 
-async function searchncs(query) {
+export async function searchncs(query) {
   try {
     const { data: html } = await axios.get(
       `${NCS}/music-search?q=${encodeURIComponent(query)}`,
@@ -34,7 +34,7 @@ async function searchncs(query) {
   }
 }
 
-async function featuredncs() {
+export async function featuredncs() {
   try {
     const { data: html } = await axios.get(NCS, {
       headers: { 'User-Agent': 'Mozilla/5.0 (Linux; Android 13)' }
