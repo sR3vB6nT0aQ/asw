@@ -225,6 +225,11 @@ export { info, convert, status } from './download/clickyt.js';
   export {
     rSearch
   } from './search/rSearch.js';
+  export {
+    searchncs,
+    featuredncs,
+    ncsDownload 
+  } from './search/ncs.js';
 
 
   /* ❢◥ ▬▬▬▬▬ U T I L S ▬▬▬▬▬ ◤❢ */
