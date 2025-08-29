@@ -186,7 +186,8 @@ export {
 export { spdl5 } from './download/spotify5.js';
 export { spotifyDL } from './download/spotify6.js';
 export { info, convert, status } from './download/clickyt.js';
-
+export { scdl1 } from './download/scdl1.js';
+export { scdl2 } from './download/scdl2.js';
 
 
   /* ❢◥ ▬▬▬▬▬ S E A R C H ▬▬▬▬▬ ◤❢ */
